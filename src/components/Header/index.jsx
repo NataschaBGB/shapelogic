@@ -11,23 +11,23 @@ export default function Header() {
             <div className="container">
 
                 <Link href="/" className="header__logo">
-                    <img src="/shapelogic_logo.png" alt="ShapeLogic Logo" className="header__logo-image" />
+                    <img src="../../public/shapelogic_logo.png" alt="ShapeLogic Logo" className="header__logo-image" />
                     <h1 className="header__title">Shape<span>Logic</span></h1>
                 </Link>
                 
                 <nav className="header__nav">
                     <ul className="header__nav-list">
                         <li className="header__nav-item">
-                            <Link href="/services" className="header__nav-link">Services</Link>
+                            <Link href="/" className="header__nav-link">Services</Link>
                         </li>
                         <li className="header__nav-item">
-                            <Link href="/about" className="header__nav-link">Om os</Link>
+                            <Link href="/" className="header__nav-link">Om os</Link>
                         </li>
                         <li className="header__nav-item">
-                            <Link href="/contact" className="header__nav-link">Kontakt</Link>
+                            <Link href="/" className="header__nav-link">Kontakt</Link>
                         </li>
                         <li className="header__nav-item">
-                            <button className="header__nav-button">Book en konsultation</button>
+                            <button className="header__nav-button">Meet and Greet</button>
                         </li>
                     </ul>
                 </nav>
