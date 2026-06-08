@@ -9,24 +9,24 @@ export default function Hero() {
         
         <section className="hero">
 
-            <svg height={302.224} width={1228.8} viewBox="0 0 1228.8 302.224" fill="none" xmlns="http://www.w3.org/2000/svg">
-        
-                {/* 0 x -------------A> */}
-                {/* y                   */}
-                {/* |                   */}
-                {/* |                   */}
-                {/* |                   */}
-                {/* v    B         C    */}
-
+            <svg height={302.224} width={1000} viewBox="0 0 1000 302.224" fill="none">
                 <polygon
-                    // øverste hjørne er x 800 og y 0
-                    // nederste højre hjørne er x 700 og y 600
-                        // sæt x til at blive udregnet fra at det hjørne skal have en vinkel på 110 grader
-                    // nederste venstre hjørne er x 0 og y 600
-                    // A = (1228.8, 0) x er 1228.8 fordi trekanten er 1228.8 bred
+                    // 1. øverste hjørne - A
+                    // 2. nederste højre hjørne - C
+                    // 3. nederste venstre hjørne - B
+                    // 
+                    // A = (1000, 0)
+                    //      - x er 1000 fordi side b er 1000 bred og derfor bevæger sig 1000 mod højre
+                    //      - y er 0 fordi det er det øverste hjørne og derfor ikke har nogen højde
                     // B = (0, 302.224)
-                    // C = (1195.8, 376.34)
-                    points="1228.8,0 1202.46,302.224 0,302.224" 
+                    //      - x er 0 fordi det er det venstre hjørne og derfor ikke har nogen bredde
+                    //      - y er 302.224 fordi den er 80% af 377.8 som er hero'ens højde
+                    // C = (973.66, 302.224)
+                    //      - x er 973.66 fordi den har en vinkel på 95 grader og derfor er 26.34 mindre end 1000
+                    //          - Dette er udregnet ved at bruge cosinus til at finde side a's vandrette bevægelse:
+                    //              302.224 * cos(95°) = -26.34 (negativ fordi det bevæger sig mod venstre)
+                    //      - y er 302.224 fordi hjørnet skal sidde på bundlinjen og have samme højde som B's y-værdi
+                    points="1000,0 973.66,302.224 0,302.224" 
                     fill="#56A374" 
                     stroke="#56A374"
                 />
@@ -36,11 +36,11 @@ export default function Hero() {
 
                 <h1>Velkommen til Shape<span>Logic</span></h1>
             
-                <h2>Vi skaber digitale løsninger</h2>
+                <h2>Gaming udstyr til alle</h2>
                 
-                <p>Moderne hjemmesider med fokus på brugeroplevelse, performance og design.</p>
+                <p>Vi tilpasser vores udstyr til dine behov og præferencer.</p>
                 
-                <button>Se vores projekter</button>
+                <button>Se vores produkter</button>
 
             </div>
 
