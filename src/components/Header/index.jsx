@@ -18,7 +18,7 @@ export default function Header() {
                 <nav className="header__nav">
                     <ul className="header__nav-list">
                         <li className="header__nav-item">
-                            <Link href="/" className="header__nav-link">Services</Link>
+                            <Link href="/" className="header__nav-link">Produkter</Link>
                         </li>
                         <li className="header__nav-item">
                             <Link href="/" className="header__nav-link">Om os</Link>
