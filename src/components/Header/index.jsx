@@ -11,7 +11,7 @@ export default function Header() {
             <div className="container">
 
                 <Link href="/" className="header__logo">
-                    <img src="/shapelogic_logo.png" alt="ShapeLogic Logo" className="header__logo-image" />
+                    <img src="/shapelogic/shapelogic_logo.png" alt="ShapeLogic Logo" className="header__logo-image" />
                     <h1 className="header__title">Shape<span>Logic</span></h1>
                 </Link>
                 
