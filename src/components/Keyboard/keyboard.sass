@@ -1,0 +1,47 @@
+.keyboard
+
+    .container
+        width: 900px
+        margin: 4rem auto
+
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 3px
+
+    &__button-row
+        display: grid
+        grid-template-columns: repeat(14, 1fr)
+        gap: 2px
+
+    &__row-1
+        grid-template-columns: repeat(13, 60px) 1fr
+    &__row-2
+        grid-template-columns: 1fr repeat(12, 60px) 1fr
+    &__row-3
+        grid-template-columns: 1fr repeat(11, 60px) 1.3fr
+    &__row-4
+        grid-template-columns: 1.5fr repeat(11, 60px) repeat(3, 47px)
+    &__row-5
+        grid-template-columns: 60px 70px 60px 60px 309px repeat(3, 60px) repeat(3, 47px)
+
+
+    &__button
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 60px
+        padding: .5rem
+        color: white
+        font-size: 1rem
+        background-color: #313131
+        border: 1px solid #ccc
+        border-radius: 4px
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9)
+        cursor: pointer
+        &:hover
+            background-color: #383838
+    &__button-PgUp, &__button-PgDn
+        height: 58px
